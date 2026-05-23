@@ -2,10 +2,10 @@ import type { AnnouncementConfig } from "../types/config";
 
 export const announcementConfig: AnnouncementConfig = {
 	// 公告标题
-	title: "欢迎大家",
+	title: "Don'tfall in love.Rise in Love.",
 
 	// 公告内容
-	content: "如果你喜欢，欢迎来到我的世界",
+	content: "智者不坠爱河 真爱催人奋进",
 
 	// 是否允许用户关闭公告
 	closable: true,

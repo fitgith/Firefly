@@ -21,13 +21,13 @@ export const siteConfig: SiteConfig = {
 
 	// 站点关键词
 	keywords: [
-		"XueLFuRen",
-		"Fuwari",
-		"Astro",
-		"ACGN",
-		"博客",
-		"技术博客",
-		"静态博客",
+		"雪梨夫人",
+		"手工",
+		"折纸",
+		"数学",
+		"运动",
+		"教程",
+		"思考",
 	],
 
 	// 主题色
@@ -75,7 +75,7 @@ export const siteConfig: SiteConfig = {
 		// 4. 网络图片: { type: "url", value: "https://example.com/logo.png", alt: "Logo" }
 		logo: {
 			type: "image",
-			value: "assets/images/firefly.png",
+			value: "assets/images/",
 			alt: "🍐",
 		},
 		// 导航栏标题
@@ -110,7 +110,7 @@ export const siteConfig: SiteConfig = {
 	outdatedThreshold: 30,
 
 	// 是否开启分享海报生成功能
-	sharePoster: true,
+	sharePoster: false,
 
 	// OpenGraph图片功能,注意开启后要渲染很长时间，不建议本地调试的时候开启
 	generateOgImages: false,
@@ -131,7 +131,7 @@ export const siteConfig: SiteConfig = {
 		// 友链页面开关
 		friends: false,
 		// 赞助页面开关
-		sponsor: true,
+		sponsor: false,
 		// 留言板页面开关，需要配置评论系统
 		guestbook: false,
 		// 番组计划页面开关，含追番、游戏、书籍和音乐，dev调试时只获取一页数据，build才会获取全部数据
