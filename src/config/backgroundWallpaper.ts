@@ -2,11 +2,11 @@ import type { BackgroundWallpaperConfig } from "@/types/config";
 
 export const backgroundWallpaper: BackgroundWallpaperConfig = {
 	// 壁纸模式："banner" 横幅壁纸，"fullscreen" 全屏壁纸，"overlay" 全屏透明，"none" 纯色背景无壁纸
-	mode: "banner",
+	mode: "overlay",
 	// 是否允许用户通过导航栏切换壁纸模式
 	// 且同时维护多种壁纸模式过于复杂（已经屎山代码），在切换时有时候可能会出现一些奇怪的过渡效果或者bug
 	// 推荐只选择自己喜欢的模式并关闭切换功能
-	switchable: true,
+	switchable: false,
 	/**
 	 * 背景图片配置
 	 * 图片路径支持三种格式：
@@ -41,22 +41,21 @@ export const backgroundWallpaper: BackgroundWallpaperConfig = {
 		// 桌面背景图片（支持单张或多张随机）
 		// desktop: "assets/images/DesktopWallpaper/d1.avif",
 		desktop: [
-			"assets/images/DesktopWallpaper/d1.avif",
-			"assets/images/DesktopWallpaper/d2.avif",
-			"assets/images/DesktopWallpaper/d3.avif",
-			"assets/images/DesktopWallpaper/d4.avif",
-			"assets/images/DesktopWallpaper/d5.avif",
-			"assets/images/DesktopWallpaper/d6.avif",
+			"assets/images/DesktopWallpaper/GlcOqzwbUAAmPDw.jpg",
+			"assets/images/DesktopWallpaper/desk1.jpg",
+			"assets/images/DesktopWallpaper/desk2.png",
+			"assets/images/DesktopWallpaper/desk3.png",
+			
 		],
 		// 移动背景图片（支持单张或多张随机）
 		// mobile: "assets/images/MobileWallpaper/m1.avif",
 		mobile: [
-			"assets/images/MobileWallpaper/m1.avif",
-			"assets/images/MobileWallpaper/m2.avif",
-			"assets/images/MobileWallpaper/m3.avif",
-			"assets/images/MobileWallpaper/m4.avif",
-			"assets/images/MobileWallpaper/m5.avif",
-			"assets/images/MobileWallpaper/m6.avif",
+			"assets/images/MobileWallpaper/m1.jpg",
+			"assets/images/MobileWallpaper/m2.jpg",
+			"assets/images/MobileWallpaper/m3.jpg",
+			"assets/images/MobileWallpaper/m4.jpg",
+			"assets/images/MobileWallpaper/m5.jpg",
+			"assets/images/MobileWallpaper/m6.jpg",
 		],
 	},
 	// 横幅壁纸和全屏壁纸共享配置
@@ -75,12 +74,13 @@ export const backgroundWallpaper: BackgroundWallpaperConfig = {
 			titleSize: "3.8rem",
 			// 主页横幅副标题
 			subtitle: [
-				"",
+				"在极度圆满中夹杂着的，对终将逝去的叹息。",
+				"热情而虚伪，新鲜又浪漫",
+				"为一片无关紧要的夕阳，压上自己一整颗心的重量。",
 				"喜欢姐姐",
-				"Amidst Silenced Stars, I Deep Sleep",
-				"Upon Lighted Fyrefly, I Soon Gaze",
-				"From Undreamt Night, I Thence Shine",
-				"In Finalized Morrow, I Full Bloom",
+				"只要过程是精彩的，那么这个过程就是结局",
+				"即使是遗憾，那也是独一无二的",
+				"带着悲伤写出伟大的故事",
 			],
 			// 主页横幅副标题字体大小
 			subtitleSize: "1.5rem",
@@ -163,9 +163,9 @@ export const backgroundWallpaper: BackgroundWallpaperConfig = {
 		// 壁纸透明度
 		opacity: 0.8,
 		// 背景模糊度
-		blur: 10,
+		blur: 5,
 		// 卡片透明度，0-1之间，值越小越透明
-		cardOpacity: 0.5,
+		cardOpacity: 0.2,
 	},
 	// 全屏壁纸模式特有配置
 	fullscreen: {
