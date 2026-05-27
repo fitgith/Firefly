@@ -2,7 +2,7 @@ import type { BackgroundWallpaperConfig } from "@/types/config";
 
 export const backgroundWallpaper: BackgroundWallpaperConfig = {
 	// 壁纸模式："banner" 横幅壁纸，"fullscreen" 全屏壁纸，"overlay" 全屏透明，"none" 纯色背景无壁纸
-	mode: "overlay",
+	mode: "fullscreen",
 	// 是否允许用户通过导航栏切换壁纸模式
 	// 且同时维护多种壁纸模式过于复杂（已经屎山代码），在切换时有时候可能会出现一些奇怪的过渡效果或者bug
 	// 推荐只选择自己喜欢的模式并关闭切换功能
@@ -41,10 +41,10 @@ export const backgroundWallpaper: BackgroundWallpaperConfig = {
 		// 桌面背景图片（支持单张或多张随机）
 		// desktop: "assets/images/DesktopWallpaper/d1.avif",
 		desktop: [
-			"assets/images/DesktopWallpaper/GlcOqzwbUAAmPDw.jpg",
+			"assets/images/DesktopWallpaper/desk0.png",
 			"assets/images/DesktopWallpaper/desk1.jpg",
 			"assets/images/DesktopWallpaper/desk2.png",
-			"assets/images/DesktopWallpaper/desk3.png",
+			"assets/images/DesktopWallpaper/desk3.jpg",
 			
 		],
 		// 移动背景图片（支持单张或多张随机）
