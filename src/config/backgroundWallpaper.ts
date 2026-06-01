@@ -79,7 +79,7 @@ export const backgroundWallpaper: BackgroundWallpaperConfig = {
 				"为一片无关紧要的夕阳，压上自己一整颗心的重量。",
 				"喜欢姐姐",
 				"只要过程是精彩的，那么这个过程就是结局",
-				"即使是遗憾，那也是独一无二的",
+				"船是我，灯塔 是我，岸也是我。",
 				"带着悲伤写出伟大的故事",
 			],
 			// 主页横幅副标题字体大小
@@ -94,7 +94,7 @@ export const backgroundWallpaper: BackgroundWallpaperConfig = {
 				// 删除速度（毫秒）
 				deleteSpeed: 50,
 				// 完全显示后的暂停时间（毫秒）
-				pauseTime: 2000,
+				pauseTime: 3000,
 			},
 		},
 		// 导航栏配置
