@@ -1,6 +1,6 @@
 ---
 title: Markdown 教程
-published: 2005-01-01
+published: 2024-10-1
 pinned: false
 description: 一个简明的 Markdown 博客示例。
 tags:
