@@ -6,7 +6,7 @@ description: 一个简明的 Markdown 博客示例。
 tags:
   - Markdown
   - 测试
-category: 文章示例
+category: 教程
 sourceLink: https://github.com/emn178/markdown
 draft: false
 ---
