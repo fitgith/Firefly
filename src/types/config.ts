@@ -12,6 +12,10 @@ export type SiteConfig = {
 	title: string;
 	subtitle: string;
 	site_url: string;
+
+	// 全站维护模式开关：true 时所有页面渲染维护页面（src/components/misc/Maintenance.astro）
+	maintenance?: boolean;
+
 	description?: string; // 网站描述，用于生成 <meta name="description">
 	keywords?: string[]; // 站点关键词，用于生成 <meta name="keywords">
 

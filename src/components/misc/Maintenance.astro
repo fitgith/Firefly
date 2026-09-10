@@ -1,0 +1,50 @@
+---
+import { Icon } from "astro-icon/components";
+import { profileConfig, siteConfig } from "@/config";
+---
+
+<!-- 全站维护模式页面：在 src/config/siteConfig.ts 中将 maintenance 设为 true 后，所有页面都会显示此内容 -->
+<div class="relative z-30 flex min-h-screen w-full items-center justify-center px-4 py-16">
+    <div class="card-base onload-animation w-full max-w-lg p-8 text-center sm:p-12">
+        <div
+            class="maintenance-icon mx-auto mb-6 flex size-20 items-center justify-center rounded-full"
+            style="background: var(--btn-regular-bg); color: var(--primary)"
+        >
+            <Icon name="material-symbols:construction-rounded" class="size-10" />
+        </div>
+        <h1 class="mb-2 text-2xl font-bold sm:text-3xl" style="color: var(--deep-text)">
+            网站维护中
+        </h1>
+        <p
+            class="mb-1 text-xs font-semibold tracking-[0.3em] uppercase"
+            style="color: var(--primary)"
+        >
+            Under Maintenance
+        </p>
+        <p class="mx-auto mt-6 max-w-xs text-sm leading-relaxed" style="color: var(--content-meta)">
+            站长正在对网站进行维护与升级，暂时无法访问。请稍后再来看看～
+        </p>
+        <div
+            class="mt-8 border-t pt-4 text-xs"
+            style="border-color: var(--line-divider); color: var(--content-meta); opacity: 0.7"
+        >
+            {profileConfig.name} · {siteConfig.subtitle}
+        </div>
+    </div>
+</div>
+
+<style>
+    .maintenance-icon {
+        animation: maintenance-breathe 2.4s ease-in-out infinite;
+    }
+
+    @keyframes maintenance-breathe {
+        0%,
+        100% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.08);
+        }
+    }
+</style>

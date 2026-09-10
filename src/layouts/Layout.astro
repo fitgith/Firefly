@@ -8,6 +8,7 @@ import FontManager from "@components/features/FontManager.astro";
 import MusicManager from "@components/features/MusicManager.astro";
 import SakuraEffect from "@components/features/SakuraEffect.astro";
 import ConfigCarrier from "@components/layout/ConfigCarrier.astro";
+import Maintenance from "@components/misc/Maintenance.astro";
 
 import {
 	backgroundWallpaper,
@@ -68,8 +69,13 @@ banner = getDefaultBackground();
 
 const enableBanner = backgroundWallpaper.mode === "banner";
 
+// 全站维护模式
+const isMaintenance = siteConfig.maintenance ?? false;
+
 let pageTitle: string;
-if (title) {
+if (isMaintenance) {
+	pageTitle = `${siteConfig.title} - 网站维护中`;
+} else if (title) {
 	pageTitle = `${title} - ${siteConfig.title}`;
 } else {
 	pageTitle = siteConfig.subtitle
@@ -577,7 +583,22 @@ const siteLang = lang.replace("_", "-");
     {shouldShowTopHighlight && <div class="top-gradient-highlight" />}
     <ConfigCarrier />
     <MusicManager />
-    <slot />
+    {
+      isMaintenance ? (
+        <>
+          <Maintenance />
+          {/* 维护模式下保留空的 swup 占位容器，避免 swup 初始化失败 */}
+          <div id="banner-overlay-container" class="hidden"></div>
+          <div id="banner-dim-container" class="hidden"></div>
+          <div id="swup-container" class="hidden"></div>
+          <div id="left-sidebar-dynamic" class="hidden"></div>
+          <div id="right-sidebar-dynamic" class="hidden"></div>
+          <div id="floating-toc-wrapper" class="hidden"></div>
+        </>
+      ) : (
+        <slot />
+      )
+    }
 
 
 

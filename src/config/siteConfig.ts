@@ -12,6 +12,10 @@ export const siteConfig: SiteConfig = {
 	// 站点副标题
 	subtitle: "XueLFuRen",
 
+	// 全站维护模式开关：true 时所有页面显示"网站维护中"页面
+	// 恢复网站：将此处改为 false（或删除该行），然后提交并推送到 master
+	maintenance: true,
+
 	// 站点 URL
 	site_url: "https://303366.xyz",
 
